@@ -37,11 +37,11 @@ class Pipe:
         # Creating 'self.tpipe' rectangle 
         # x-coordinate is the 'x' value passed as argument
         # y-coordinate is 'self.height-400' where 400 is the length of pipe image
-        self.tpipe=pygame.Rect(x,self.height-400,40,400)
+        self.tpipe=pygame.Rect(x,self.height-400,40,300)
         # Creating 'self.bpipe' rectangle 
         # x-coordinate is the 'x' value passed as argument
         # y-coordinate is 'self.height+150' where 150 is the constant gap between the pipes
-        self.bpipe=pygame.Rect(x,self.height+150,40,400)
+        self.bpipe=pygame.Rect(x,self.height+150,40,300)
         
     def display(self):
       screen.blit(images["pipe"],self.bpipe)
